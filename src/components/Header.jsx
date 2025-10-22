@@ -18,7 +18,7 @@ export default function Header() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    loadHospitales();
+   // loadHospitales();
   }, []);
 
   const loadHospitales = () => {

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./crud/Home";
 import Header from "./components/Header";
-import Doctores from "./components/Doctores";
-import CrearHospital from "./components/CrearHospital";
+import Empleados from "./crud/Empleados";
+import Multiple from "./crud/Multiple";
 
 export default function Router() {
   return (
@@ -10,8 +10,9 @@ export default function Router() {
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/crearHospital" element={<CrearHospital />} />
-        <Route path="/doctores/:idhospital" element={<Doctores />} />
+        <Route path="/multiple" element={<Multiple />} />
+        <Route path="/hospital/:idhospital" element={ <Empleados/>} />
+        
       </Routes>
     </BrowserRouter>
   );
